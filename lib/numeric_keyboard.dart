@@ -54,25 +54,25 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
           ButtonBar(
             alignment: widget.mainAxisAlignment,
             children: <Widget>[
-              _calcButton('1'),
-              _calcButton('2'),
-              _calcButton('3'),
+              calcButton('1'),
+              calcButton('2'),
+              calcButton('3'),
             ],
           ),
           ButtonBar(
             alignment: widget.mainAxisAlignment,
             children: <Widget>[
-              _calcButton('4'),
-              _calcButton('5'),
-              _calcButton('6'),
+              calcButton('4'),
+              calcButton('5'),
+              calcButton('6'),
             ],
           ),
           ButtonBar(
             alignment: widget.mainAxisAlignment,
             children: <Widget>[
-              _calcButton('7'),
-              _calcButton('8'),
-              _calcButton('9'),
+              calcButton('7'),
+              calcButton('8'),
+              calcButton('9'),
             ],
           ),
           ButtonBar(
@@ -86,7 +86,7 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
                       width: 50,
                       height: 50,
                       child: widget.leftIcon)),
-              _calcButton('0'),
+              calcButton('0'),
               InkWell(
                   borderRadius: BorderRadius.circular(45),
                   onTap: widget.rightButtonFn,
@@ -102,7 +102,7 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
     );
   }
 
-  Widget _calcButton(String value) {
+  Widget calcButton(String value) {
     return InkWell(
         key: Key('keypad_'+value),
         borderRadius: BorderRadius.circular(45),
