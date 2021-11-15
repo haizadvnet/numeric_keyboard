@@ -104,6 +104,7 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
 
   Widget _calcButton(String value) {
     return InkWell(
+        key: Key('keypad_'+value),
         borderRadius: BorderRadius.circular(45),
         onTap: () {
           widget.onKeyboardTap(value);
